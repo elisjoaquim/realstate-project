@@ -11,6 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   background-color: #fbfcff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -297,16 +298,94 @@ a:active {
   font-weight: 700;
 }
 
+.feature__text {
+  position: relative;
+}
+.feature__button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(50%);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: 0;
+}
 .feature__slide-container {
   display: flex;
 }
 .feature__slide {
-  height: 39.9375rem;
-  width: 22.3125rem;
-  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32.6875rem;
+  width: 22.25rem;
+  padding: 1.625rem 1.5rem;
+  border-radius: 1.625rem;
   background-color: #ffffff;
+  box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.001);
+  transition: all 0.2s;
 }
-.feature__slide img {
-  height: 22.8125rem;
+.feature__slide:not(:last-child) {
+  margin-right: 1.875rem;
+}
+.feature__slide:hover {
+  transform: scale(1.02);
+}
+.feature__image {
+  height: 22.25rem;
   width: 19.5rem;
+  border-radius: 1.4375rem;
+  background-position: 65% center;
+  background-size: 205%;
+  background-repeat: no-repeat;
+}
+.feature__title {
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.125rem;
+}
+.feature__location {
+  color: #1b1b1d;
+}
+.feature__price {
+  color: #648395;
+  font-size: 1.125rem;
+}
+.feature__price span {
+  font-size: 0.875rem;
+  color: #49535f;
+}
+
+.location__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location__text {
+  text-align: center;
+  line-height: 1.8;
+  max-width: 18ch;
+}
+.location__image {
+  height: 36.6875rem;
+  width: 71.25rem;
+  border-radius: 4.375rem;
+}
+
+.testemonial__title {
+  text-align: center;
+}
+.testemonial__slider {
+  overflow: hidden;
+}
+.testemonial__slide {
+  height: 11.875rem;
+  width: 35rem;
+  border-radius: 0.625rem;
+  background-color: greenyellow;
+  flex-grow: 1;
+}
+.testemonial__slide:not(:last-child) {
+  margin-right: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,21 +1,68 @@
 .feature {
   &__text {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(50%);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    border: 0;
   }
 
   &__slide-container {
     display: flex;
+
     // overflow-x scroll;
   }
 
   &__slide {
-    height: 39.9375rem;
-    width: 22.3125rem;
-    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32.6875rem;
+    width: 22.25rem;
+    padding: 1.625rem 1.5rem;
+    border-radius: 1.625rem;
     background-color: $white;
+    box-shadow: 1px 1px 5px 10px rgba($color: #000000, $alpha: 0.001);
+    transition: all 0.2s;
 
-    & img {
-      height: 22.8125rem;
-      width: 19.5rem;
+    &:not(:last-child) {
+      margin-right: 1.875rem;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__image {
+    height: 22.25rem;
+    width: 19.5rem;
+    border-radius: 1.4375rem;
+    background-position: 65% center;
+    background-size: 205%;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    font-weight: 500;
+    color: $black;
+    font-size: $fontMedium;
+  }
+  &__location {
+    color: $lightBlack;
+  }
+  &__price {
+    color: $gray;
+    font-size: $fontMedium;
+    span {
+      font-size: $fontSmall;
+      color: $primary;
     }
   }
 }

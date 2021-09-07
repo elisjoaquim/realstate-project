@@ -1,0 +1,19 @@
+.location {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 18ch;
+  }
+
+  &__image {
+    height: 36.6875rem;
+    width: 71.25rem;
+    border-radius: 4.375rem;
+  }
+}
