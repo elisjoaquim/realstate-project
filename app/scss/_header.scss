@@ -1,0 +1,69 @@
+.header {
+  height: 46.875rem;
+  background-image: linear-gradient(to right bottom, $primary, $primaryDarker);
+  padding-top: 2.125rem;
+
+  &__navigation {
+    margin-bottom: 11.25rem;
+  }
+
+  &__links {
+  }
+
+  &__logo {
+    height: 1.3125rem;
+  }
+
+  &__menu {
+    display: inline-block;
+    margin-right: 1.6875rem;
+
+    a {
+      transition: all 0.2s;
+      position: relative;
+
+      &::after {
+        content: '';
+        opacity: 0;
+        height: 2px;
+        width: 40px;
+        position: absolute;
+        left: 50%;
+        bottom: -50%;
+        transform: translateX(-50%);
+        background-color: $lightGray;
+        border-radius: 50px;
+        transition: all 0.4s;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2.25rem;
+      }
+      &:hover {
+        color: $lightGray;
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: inline-block;
+
+    & a {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &:first-child {
+        border: 0.0625rem solid $white;
+        &:hover {
+          background-color: rgba($white, 0.1) !important;
+        }
+      }
+      &:last-child {
+        background-color: $lightBlue;
+      }
+    }
+  }
+}

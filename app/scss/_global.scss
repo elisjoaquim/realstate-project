@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $fontMedium;
+  background-color: $whiteBackground;
+}
+
+//MAIN CONTAINER
+.container {
+  max-width: 74.25rem;
+  margin: 0 auto;
+
+  &--px {
+    padding: 0 1.5rem;
+  }
+  &--py {
+    padding: 11.25rem 0;
+  }
+  &--pt {
+    padding-top: 11.25rem;
+  }
+  &--pb {
+    padding-bottom: 11.25rem;
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+
+  &--pall {
+    padding: 11.25rem 1.5rem;
+  }
+}
+
+//HEADERS
+h1,
+h2 {
+  margin-bottom: 2rem;
+}
+h1 {
+  font-size: 3.25rem;
+  max-width: 15ch;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 1rem;
+}
+
+.section-description {
+  font-size: $fontMediumLarge;
+  color: $lightBlack;
+  font-weight: 700;
+  margin-bottom: 2.875rem;
+}
+
+//LINKS CONFIGURATIONS
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $white;
+  font-size: $fontSmall;
+}
+
+//FLEX CONFIGURATIONS
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-fd-c {
+    flex-direction: column;
+  }
+}
+
+//BUTTONS
+.button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $heavyBlue !important;
+  }
+}

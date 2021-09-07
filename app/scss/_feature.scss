@@ -1,0 +1,21 @@
+.feature {
+  &__text {
+  }
+
+  &__slide-container {
+    display: flex;
+    // overflow-x scroll;
+  }
+
+  &__slide {
+    height: 39.9375rem;
+    width: 22.3125rem;
+    border-radius: 2.5rem;
+    background-color: $white;
+
+    & img {
+      height: 22.8125rem;
+      width: 19.5rem;
+    }
+  }
+}

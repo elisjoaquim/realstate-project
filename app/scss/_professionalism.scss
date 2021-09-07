@@ -1,0 +1,38 @@
+.professionalism {
+  &__text {
+    text-align: center;
+  }
+
+  &__reasons {
+    &-item {
+      height: 11.5rem;
+      width: 22.875rem;
+      padding: 1.375rem;
+      text-align: center;
+      background-color: $white;
+      border-radius: 1rem;
+      box-shadow: 1px 1px 5px 10px rgba($color: #000000, $alpha: 0.001);
+
+      &:not(:last-child) {
+        margin-right: 1.4375rem;
+      }
+      & div:first-of-type {
+        height: 3.125rem;
+        width: 3.125rem;
+        background-color: $lightGray;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      & div:nth-child(2) {
+        font-weight: 600;
+      }
+
+      & div:last-child {
+        font-size: $fontSmall;
+        max-width: 28ch;
+      }
+    }
+  }
+}
