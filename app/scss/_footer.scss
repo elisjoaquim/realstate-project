@@ -1,0 +1,56 @@
+.footer {
+  font-size: $fontSmall;
+  background-color: $white;
+  padding: 2.5rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-areas:
+      'title col1 col2 col3'
+      'copy copy copy copy';
+    column-gap: 1rem;
+    row-gap: 3rem;
+  }
+
+  & a {
+    color: $lightBlack;
+  }
+
+  &__logo {
+    height: 1.3125rem;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    grid-area: title;
+  }
+  &__description {
+    max-width: 46ch;
+    line-height: 2;
+  }
+
+  &__links {
+    div {
+      font-weight: 500;
+    }
+    a {
+      display: block;
+      margin-top: 1.5rem;
+    }
+    &.col-1 {
+      grid-area: col1;
+    }
+    &.col-2 {
+      grid-area: col2;
+    }
+    &.col-3 {
+      grid-area: col3;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    grid-area: copy;
+  }
+}
