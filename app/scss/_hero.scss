@@ -42,21 +42,16 @@
 
   .search {
     &__item {
-      color: $lightBlack;
-
-      & div:first-child {
-        //   background-color: yellow;
-        display: flex;
-        margin-bottom: 0.325rem;
-        & div {
-          font-size: $fontLarge;
-        }
-        & img {
-          transform: rotate(90deg);
-          opacity: 0.5;
-        }
+      label {
+        display: block;
+        font-size: $fontLarge;
+        margin-bottom: 1rem;
       }
-      & div:last-child {
+
+      select,
+      select:focus {
+        display: block;
+        border: none;
         font-size: $fontSmall;
         opacity: 0.9;
       }

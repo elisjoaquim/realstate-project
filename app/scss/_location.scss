@@ -11,9 +11,10 @@
     max-width: 18ch;
   }
 
-  &__image {
-    height: 36.6875rem;
+  &__map {
+    height: 30rem;
     width: 71.25rem;
     border-radius: 4.375rem;
+    overflow: hidden;
   }
 }

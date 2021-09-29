@@ -1,3 +1,4 @@
+//Testemonial
 .testemonial {
   &__title {
     text-align: center;
@@ -86,6 +87,7 @@
   }
 
   &__btn-review {
+    font-family: inherit;
     padding: 0.9375rem 1.125rem;
     border: 0.0625rem solid $gray;
     &:hover {

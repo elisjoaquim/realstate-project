@@ -1,0 +1,19 @@
+{
+  "name": "house-selling",
+  "version": "1.0.0",
+  "description": "A realstate site company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisjoaquim/realstate-project.git"
+  },
+  "author": "Elis Joaquim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisjoaquim/realstate-project/issues"
+  },
+  "homepage": "https://github.com/elisjoaquim/realstate-project#readme"
+}

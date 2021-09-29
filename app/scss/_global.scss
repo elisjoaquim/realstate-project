@@ -108,3 +108,17 @@ a:active {
     background-color: $heavyBlue !important;
   }
 }
+
+.hide-for-mobile {
+  //Hide in the mobile
+  @include breakpoint-down(medium) {
+    display: none !important;
+  }
+}
+
+.hide-for-desktop {
+  //Hide in desktop
+  @include breakpoint-up(large) {
+    display: none !important;
+  }
+}
