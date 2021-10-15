@@ -1,3 +1,26 @@
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const btnHamburger = document.querySelector('.header__hamburger-menu');
+const mobileMenu = document.querySelector('.header__mobile-menu');
+
+/////////////////HEADER ////////////////
+
+//Toggle between to classes passed to the element
+const toggleClass = (elementClassList, class1, class2) => {
+  elementClassList.contains(class1)
+    ? elementClassList.remove(class1) || elementClassList.add(class2)
+    : elementClassList.remove(class2) || elementClassList.add(class1);
+};
+
+const toggleMenu = () => {
+  body.classList.toggle('noscroll');
+  header.classList.toggle('open');
+  toggleClass(mobileMenu.classList, 'animate-in', 'animate-out');
+};
+
+btnHamburger.addEventListener('click', toggleMenu);
+
+/////////////////MAP ////////////////
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer(
@@ -14,9 +37,8 @@ L.tileLayer(
   }
 ).addTo(map);
 
-////////////////////////////////////////////////////
 /////////////////TESTEMONIAL SLIDER ////////////////
-////////////////////////////////////////////////////
+
 const slides = document.querySelectorAll('.testemonial__slide');
 const dotsContainer = document.querySelector('.testemonial__dots-container');
 let currentSlide = 0;

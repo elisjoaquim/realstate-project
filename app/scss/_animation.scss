@@ -1,0 +1,58 @@
+// step-out down on menu on Mouse Over
+@keyframes step-in {
+  from {
+    height: 2px;
+    transform-origin: left;
+    transform: translateX(-50%) scaleX(0);
+  }
+
+  to {
+    height: 2px;
+    transform-origin: left;
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+// step-out down on menu Mouse Leave
+@keyframes step-out {
+  from {
+    transform-origin: right;
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  to {
+    transform-origin: right;
+    transform: translateX(-50%) scaleX(0);
+  }
+}
+
+@keyframes down-up {
+  from {
+    transform: translateY(1000px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(1000px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.animate-in {
+  animation: down-up 0.3s forwards;
+}
+.animate-out {
+  animation: up-down 0.3s forwards;
+}

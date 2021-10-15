@@ -1,6 +1,7 @@
 .hero {
   &__image {
     position: relative;
+
     &::before {
       content: '';
       position: absolute;
@@ -14,6 +15,7 @@
       border-top-left-radius: 15rem;
       border-bottom-left-radius: 2.625rem;
       border-bottom-right-radius: 2.625rem;
+      // transform: translateZ(-1px);
     }
   }
 
@@ -41,7 +43,7 @@
   }
 
   .search {
-    &__item {
+    &__option {
       label {
         display: block;
         font-size: $fontLarge;

@@ -4,9 +4,10 @@
   }
 
   &__reasons {
+    width: inherit;
     &-item {
       height: 11.5rem;
-      width: 22.875rem;
+      width: 19.875rem;
       padding: 1.375rem;
       text-align: center;
       background-color: $white;
