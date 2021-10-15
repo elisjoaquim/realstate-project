@@ -249,16 +249,20 @@ a:active {
   -webkit-animation: step-in 0.5s forwards;
           animation: step-in 0.5s forwards;
 }
-.header__buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 2rem;
-  margin-top: 10rem;
+@media (max-width: 63.9375em) {
+  .header__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin-top: 10rem;
+  }
 }
-.header__buttons a {
-  flex-shrink: 1;
-  width: 70px;
+@media (max-width: 63.9375em) {
+  .header__buttons a {
+    flex-shrink: 1;
+    width: 70px;
+  }
 }
 .header__buttons a:not(:last-child) {
   margin-right: 1rem;

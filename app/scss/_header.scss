@@ -3,11 +3,11 @@
   background-image: linear-gradient(to right bottom, $primary, $primaryDarker);
   z-index: -10;
 
-  &.open {
-    .overlay {
-      // display: block;
-    }
-  }
+  // &.open {
+  //   .overlay {
+  //     // display: block;
+  //   }
+  // }
 
   &__navigation {
     padding-top: 1.71875rem;
@@ -56,15 +56,18 @@
     }
   }
   &__buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 2rem;
-    margin-top: 10rem;
-
+    @include breakpoint-down(medium) {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 2rem;
+      margin-top: 10rem;
+    }
     a {
-      flex-shrink: 1;
-      width: 70px;
+      @include breakpoint-down(medium) {
+        flex-shrink: 1;
+        width: 70px;
+      }
       &:not(:last-child) {
         margin-right: 1rem;
       }
