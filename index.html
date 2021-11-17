@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,28 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="app/scss/style.css" />
-    
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
 
     <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
     <script defer src="app/js/script.js"></script>
 
     <title>eCode Realstate</title>
   </head>
+
   <body>
     <header class="header">
       <nav class="header__navigation container container--px flex flex-jc-sb">
         <!-- <div class="overlay"></div> -->
-        <a href="#"
-          ><img class="header__logo" src="img/logo-white.svg" alt="logo"
-        /></a>
-        
+        <a href="#"><img class="header__logo" src="img/logo-white.svg" alt="logo" /></a>
+
         <div class="header__links hide-for-mobile">
           <div class="header__menu">
+
             <a href="#">Home</a>
             <a href="#">About us</a>
             <a href="#">Our Service</a>
@@ -40,20 +41,20 @@
             <a href="#" class="header__cta btn-signUp button">Sign up</a>
           </div>
         </div>
-        <a class="header__hamburger-menu hide-for-desktop"href="#">
+        <a class="header__hamburger-menu hide-for-desktop" href="#">
           <span></span><span></span><span></span>
         </a>
         <div class="header__mobile-menu flex flex-ai-c flex-fd-c hide-for-desktop">
-          <a href="#">Home</a>
-          <a href="#">About us</a>
-          <a href="#">Our Service</a>
+          <a href="intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end">Home</a>
+          <a href="intent://com.android.settings/#Intent;scheme=android-app;end">About us</a>
+
           <a href="#">Contact</a>
           <div class="header__buttons">
             <a href="#" class="button header__cta btn-signIn">Sign in</a>
             <a href="#" class="header__cta btn-signUp button">Sign up</a>
           </div>
         </div>
-       
+
 
       </nav>
 
@@ -106,32 +107,26 @@
           <p class="section-description">We Serve Professionally</p>
         </div>
         <div class="professionalism__reasons flex flex-jc-sb flex-ai-c">
-          <div
-            class="
+          <div class="
               professionalism__reasons-item
               flex flex-jc-sb flex-ai-c flex-fd-c
-            "
-          >
+            ">
             <div><img src="img/home.svg" alt="home" /></div>
             <div>Suitable for Family</div>
             <div>The house we provide is very suitable for families</div>
           </div>
-          <div
-            class="
+          <div class="
               professionalism__reasons-item
               flex flex-jc-sb flex-ai-c flex-fd-c
-            "
-          >
+            ">
             <div><img src="img/trusted.svg" alt="trusted" /></div>
             <div>Trusted and Secure</div>
             <div>We sell houses by maintaining client confidentiality</div>
           </div>
-          <div
-            class="
+          <div class="
               professionalism__reasons-item
               flex flex-jc-sb flex-ai-c flex-fd-c
-            "
-          >
+            ">
             <div><img src="img/payments.svg" alt="payment" /></div>
             <div>Easy Payments</div>
             <div>We make payments easy for you to enjoy your new home</div>
@@ -177,7 +172,7 @@
         <div class="feature__text">
           <h2>Special Featured For You</h2>
           <p class="section-description">Best Property Deals</p>
-          <button  class="feature__button"><img src="img/arrow.svg" alt="arrow" /></button>
+          <button class="feature__button"><img src="img/arrow.svg" alt="arrow" /></button>
         </div>
       </div>
       <div class="feature__slide-container container container--px container--pb">
@@ -185,25 +180,25 @@
           <div class="feature__image" style="background-image: url('img/option-1.jpg');"></div>
           <div class="feature__title">House Of Abstract</div>
           <div class="feature__location">Bali, Indonesia</div>
-          <div class="feature__price">$875/<span>Month</span></div>          
+          <div class="feature__price">$875/<span>Month</span></div>
         </a>
         <a class="feature__slide" href="#">
           <div class="feature__image" style="background-image: url('img/option-2.jpg');"></div>
           <div class="feature__title">Eropah Style</div>
           <div class="feature__location">Bagor, Indonesia</div>
-          <div class="feature__price">$780/<span>Month</span></div>          
+          <div class="feature__price">$780/<span>Month</span></div>
         </a>
         <a class="feature__slide" href="#">
           <div class="feature__image" style="background-image: url('img/option-3.jpg');"></div>
           <div class="feature__title">Rumahna Sae</div>
           <div class="feature__location">Sukabumi, Indonesia</div>
-          <div class="feature__price">$740/<span>Month</span></div>          
+          <div class="feature__price">$740/<span>Month</span></div>
         </a>
         <a class="feature__slide" href="#">
           <div class="feature__image" style="background-image: url('img/option-4.jpg');"></div>
           <div class="feature__title">Lobito Restinga</div>
           <div class="feature__location">Benguela, Angola</div>
-          <div class="feature__price">$740/<span>Month</span></div>          
+          <div class="feature__price">$740/<span>Month</span></div>
         </a>
       </div>
     </section>
@@ -227,11 +222,11 @@
               <div class="testemonial__image" style="background-image: url('img/person-1.jpg');"></div>
               <div class="testemonial__name">Stela Umbro</div>
               <div class="testemonial__star">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/star.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/star.svg" alt="">
               </div>
               <div class="testemonial__text">
                 The service is quite satisfying, we are very helpful by my Home
@@ -247,8 +242,8 @@
                 <img src="img/starOrange.svg" alt="">
                 <img src="img/starOrange.svg" alt="">
                 <img src="img/starOrange.svg" alt="">
-                
-               </div>
+
+              </div>
               <div class="testemonial__text">
                 Pelayanan nyo aukup memuaskan kami kongat terbantu oleh agen
                 Rumahku. Terima kasit banyak.
@@ -260,14 +255,14 @@
               <div class="testemonial__image" style="background-image: url('img/person-3.jpg');"></div>
               <div class="testemonial__name">Cris Savan</div>
               <div class="testemonial__star">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
               </div>
               <div class="testemonial__text">
-               It is simply amazing! They got me a new house in 24h.
+                It is simply amazing! They got me a new house in 24h.
               </div>
             </div>
             <div class="testemonial__card">
@@ -279,10 +274,10 @@
                 <img src="img/starOrange.svg" alt="">
                 <img src="img/star.svg" alt="">
                 <img src="img/star.svg" alt="">
-               </div>
+              </div>
               <div class="testemonial__text">
                 Nice service. But they took to long to get in touch with me.
-                But their house is really beautiful 
+                But their house is really beautiful
               </div>
             </div>
           </div>
@@ -291,11 +286,11 @@
               <div class="testemonial__image" style="background-image: url('img/person-5.jpg');"></div>
               <div class="testemonial__name">Ami Dukni</div>
               <div class="testemonial__star">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/starOrange.svg" alt="">
-               <img src="img/star.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/starOrange.svg" alt="">
+                <img src="img/star.svg" alt="">
               </div>
               <div class="testemonial__text">
                 It was very easy for me! I hope you keep being so attentive.
@@ -310,8 +305,8 @@
                 <img src="img/starOrange.svg" alt="">
                 <img src="img/starOrange.svg" alt="">
                 <img src="img/starOrange.svg" alt="">
-                
-               </div>
+
+              </div>
               <div class="testemonial__text">
                 Pelayanan nyo aukup memuaskan kami kongat terbantu oleh agen
                 Rumahku. Terima kasit banyak.
@@ -344,7 +339,7 @@
           <a href="#">Rent House</a>
           <a href="#">Sell House</a>
         </div>
-        <div  class="footer__links col-2">
+        <div class="footer__links col-2">
           <div>Support</div>
           <a href="#">FAQ</a>
           <a href="#">Terms</a>
@@ -356,8 +351,9 @@
           <a href="#">Instagram</a>
           <a href="#">Twitter</a>
         </div>
-        <div class="footer__copyright" >Copyright &copy; eCode Realstate 2021 All Right Reserved</div>
+        <div class="footer__copyright">Copyright &copy; eCode Realstate 2021 All Right Reserved</div>
       </div>
     </footer>
   </body>
+
 </html>
