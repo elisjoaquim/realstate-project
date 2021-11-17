@@ -33,9 +33,9 @@
         <!-- Desktop -->
         <div class="header__links flex hide-for-mobile">
           <div class="header__menu">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Our Service</a>
+            <a href="intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end">Home</a>
+            <a href="intent://com.android.settings/#Intent;scheme=android-app;end">About us</a>
+            <a href="intent://com.google.android.gms/#Intent;scheme=promote_smartlock_scheme;end">Our Service</a>
             <a href="#">Contact</a>
           </div>
           <div class="header__buttons">
@@ -64,50 +64,49 @@
 
       </nav>
 
-      <div class="hero container container--pall flex flex-fd-c">
 
-        <div>
-          <div class="hero__image"></div>
-        </div>
-        <div class="hero__text">
-          <h1>Let's Find Your Dream Home</h1>
-          <p>
+      <div class="hero container container--px grid-2-colums grid-ai-c">
+        <div class="hero__left-container hide-for-mobile">
+          <h1 class="hero__text">Let's Find Your Dream Home</h1>
+          <p class="hero__description">
             We are a real state agency that will help you to find your dream
             home, let's discuss for a dream house.
           </p>
+          <div class="hero__cta flex search hide-for-mobile">
+            <div class="search__option location">
+              <label for="location">Location</label>
+              <select name="location" id="location">
+                <option value="bali-indonesia">Bali, Indonesia</option>
+                <option value="restinga">Restinga, Lobito</option>
+                <option value="iawai">Hawai</option>
+              </select>
+            </div>
+            <div class="search__option property">
+              <label for="property">Property</label>
+              <select name="property" id="property">
+                <option value="classic">Classic House</option>
+                <option value="modern">Modern House</option>
+                <option value="normal">Normal</option>
+              </select>
+            </div>
+            <div class="search__option price">
+              <label for="price">Price</label>
+              <select name="price" id="price">
+                <option value="1000-2000">$1000-$2000</option>
+                <option value="3000-1000">$3000-$1000</option>
+                <option value="10000-20000">$10000+</option>
+              </select>
+            </div>
+            <button class="button hero__button">Search</button>
+          </div>
         </div>
-
-        <div class="hero__search flex search">
-          <div class="search__option location">
-            <label for="location">Location</label>
-            <select name="location" id="location">
-              <option value="bali-indonesia">Bali, Indonesia</option>
-              <option value="restinga">Restinga, Lobito</option>
-              <option value="iawai">Hawai</option>
-            </select>
-          </div>
-          <div class="search__option property">
-            <label for="property">Property</label>
-            <select name="property" id="property">
-              <option value="classic">Classic House</option>
-              <option value="modern">Modern House</option>
-              <option value="normal">Normal</option>
-            </select>
-          </div>
-          <div class="search__option price">
-            <label for="price">Price</label>
-            <select name="price" id="price">
-              <option value="1000-2000">$1000-$2000</option>
-              <option value="3000-1000">$3000-$1000</option>
-              <option value="10000-20000">$10000+</option>
-            </select>
-          </div>
-          <button class="button hero__button">Search</button>
+        <div class="hero__right-container">
+          <div class="hero__image"></div>
         </div>
       </div>
     </header>
 
-    <section class="professionalism">
+    <!-- <section class="professionalism">
       <div class="container container--pall flex flex-fd-c flex-jc-c flex-ai-c">
         <div class="professionalism__text">
           <h2>Why Choose Us</h2>
@@ -140,8 +139,11 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="works">
+    </section> -->
+
+
+
+    <!-- <section class="works">
       <div class="container container--pall">
         <div class="works__image"></div>
         <div class="works__text">
@@ -173,8 +175,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="feature">
+    </section> -->
+    <!-- <section class="feature">
       <div class="container container--pall">
         <div class="feature__text">
           <h2>Special Featured For You</h2>
@@ -182,8 +184,8 @@
           <button class="feature__button"><img src="img/arrow.svg" alt="arrow" /></button>
         </div>
 
-        <div class="feature__slide-container container">
-          <a class="feature__slide" href="#">
+        <div class="feature__slide-container container hide-for-mobile">
+          <a class=" feature__slide" href="#">
             <div class="feature__image" style="background-image: url('img/option-1.jpg');"></div>
             <div class="feature__title">House Of Abstract</div>
             <div class="feature__location">Bali, Indonesia</div>
@@ -209,16 +211,16 @@
           </a>
         </div>
       </div>
-    </section>
-
+    </section> -->
+    <!-- 
     <section class="location">
       <div class=" location__container container container--pb container--px">
         <div class="section-description location__text">Choose a Location Wherever You Want</div>
         <div class="location__map" id="map"></div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="testemonial">
+    <!-- <section class="testemonial">
       <div class="container container--pb container--px flex flex-fd-c flex-ai-c">
         <div class="testemonial__title">
           <h2>Testemonial</h2>
@@ -326,11 +328,11 @@
           <!-- <span class="testemonial__dots active"></span>
           <span class="testemonial__dots"></span>
           <span class="testemonial__dots"></span> -->
-        </div>
-        <button class="button testemonial__btn-review">View More Reviews</button>
-      </div>
-    </section>
-    <footer class="footer">
+    </div>
+    <button class="button testemonial__btn-review">View More Reviews</button>
+    </div>
+    </section> -->
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__title flex flex-fd-c flex-jc-sb flex-ai-s">
           <a href="#"><img class="footer__logo" src="img/logo-black.svg" alt="logo" /></a>
@@ -361,7 +363,7 @@
         </div>
         <div class="footer__copyright">Copyright &copy; eCode Realstate 2021 All Right Reserved</div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 
 </html>

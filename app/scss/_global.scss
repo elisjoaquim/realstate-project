@@ -1,14 +1,21 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
+  max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: $fontMedium;
+  color: $white;
   background-color: $whiteBackground;
   overflow-x: hidden;
 }
@@ -19,8 +26,7 @@ body {
   margin: 0 auto;
 
   &--px {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 0 1.5rem;
   }
   &--py {
     padding-top: 11.5625rem;
@@ -44,17 +50,18 @@ body {
     padding: 11.5625rem 1.5rem 3.5rem 1.5rem;
   }
 }
-
-//HEADERS
-h1,
-h2 {
-  margin-bottom: 2rem;
-}
 h1 {
   font-size: 3.25rem;
   max-width: 15ch;
   line-height: 1.3;
 }
+
+//HEADERS
+
+h2 {
+  margin-bottom: 2rem;
+}
+
 h2 {
   font-size: 1rem;
 }
@@ -123,4 +130,20 @@ a:active {
 
 .noscroll {
   overflow-y: hidden;
+}
+
+/*LAYOUTS MODELS */
+
+.grid {
+  /*Grid for  two columns*/
+  &-2-colums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /*Aliging grid item center, horizontally*/
+  &-ai-c {
+    align-items: center;
+  }
 }

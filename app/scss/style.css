@@ -1,13 +1,19 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.125rem;
   background-color: #f8f8f8;
   overflow-x: hidden;
@@ -112,6 +118,12 @@ a:active {
   overflow-y: hidden;
 }
 
+/*LAYOUTS MODELS */
+.grid-2-colums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @-webkit-keyframes step-in {
   from {
     height: 2px;
@@ -199,12 +211,12 @@ a:active {
 }
 .animate-in {
   -webkit-animation: down-up 0.3s forwards;
-          animation: down-up 0.3s forwards;
+  animation: down-up 0.3s forwards;
 }
 
 .animate-out {
   -webkit-animation: up-down 0.3s forwards;
-          animation: up-down 0.3s forwards;
+  animation: up-down 0.3s forwards;
 }
 
 .header {
@@ -227,7 +239,7 @@ a:active {
   position: relative;
 }
 .header__menu a::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 40px;
   position: absolute;
@@ -237,7 +249,7 @@ a:active {
   background-color: #edf4fc;
   border-radius: 50px;
   -webkit-animation: step-out 0.5s forwards;
-          animation: step-out 0.5s forwards;
+  animation: step-out 0.5s forwards;
 }
 .header__menu a:not(:last-child) {
   margin-right: 2.25rem;
@@ -247,7 +259,7 @@ a:active {
 }
 .header__menu a:hover::after {
   -webkit-animation: step-in 0.5s forwards;
-          animation: step-in 0.5s forwards;
+  animation: step-in 0.5s forwards;
 }
 @media (max-width: 63.9375em) {
   .header__buttons {
@@ -307,34 +319,22 @@ a:active {
 }
 
 .hero__image {
+  height: 670px;
   position: relative;
 }
 .hero__image::before {
-  content: "";
+  content: '';
   position: absolute;
+  background-image: url('../../img/main.jpg');
   height: 41.875rem;
   width: 38.75rem;
-  top: -7rem;
-  right: -9.2%;
-  background-image: url("../../img/main.jpg");
   background-size: cover;
   background-position: center 40%;
   border-top-left-radius: 15rem;
   border-bottom-left-radius: 2.625rem;
   border-bottom-right-radius: 2.625rem;
 }
-.hero__text {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2.75rem;
-  color: #ffffff;
-}
-.hero__text p {
-  max-width: 38ch;
-  line-height: 2;
-}
-.hero__search {
-  z-index: 2;
+.hero__image__search {
   width: 51.875rem;
   height: 7rem;
   border-radius: 2rem;
@@ -344,19 +344,19 @@ a:active {
   justify-content: space-between;
   align-items: center;
 }
-.hero .search__option label {
+.hero__image .search__option label {
   display: block;
   font-size: 1.375rem;
   margin-bottom: 1rem;
 }
-.hero .search__option select,
-.hero .search__option select:focus {
+.hero__image .search__option select,
+.hero__image .search__option select:focus {
   display: block;
   border: none;
   font-size: 0.875rem;
   opacity: 0.9;
 }
-.hero__button {
+.hero__image__button {
   width: 155px;
   height: 76px;
   border: none;
@@ -406,7 +406,7 @@ a:active {
   position: relative;
 }
 .works__image::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 43rem;
   width: 26.875rem;
@@ -417,13 +417,13 @@ a:active {
   top: -1.8125rem;
 }
 .works__image::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 43rem;
   width: 26.875rem;
   right: 0;
   top: 0;
-  background-image: url("../../img/option-1.jpg");
+  background-image: url('../../img/option-1.jpg');
   background-position: 75%;
   border-top-left-radius: 7.125rem;
   border-bottom-right-radius: 7.125rem;
@@ -618,9 +618,9 @@ a:active {
 .footer .container {
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
-  grid-template-areas: "title col1 col2 col3" "copy copy copy copy";
+  grid-template-areas: 'title col1 col2 col3' 'copy copy copy copy';
   -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   row-gap: 3rem;
 }
 .footer a {
@@ -657,4 +657,4 @@ a:active {
   display: flex;
   justify-content: center;
   grid-area: copy;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
